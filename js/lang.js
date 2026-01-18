@@ -18,6 +18,12 @@ const translations = {
       "Desarrollo de una solución escalable con bases de datos distribuidas, orientada a entornos Big Data.",
 
     skills_title: "Habilidades",
+    skills_languages: "Lenguajes",
+    skills_frontend: "Frontend",
+    skills_backend: "Backend",
+    skills_database: "Bases de Datos",
+    skills_tools: "DevOps & Herramientas",
+
 
     experience_title: "Experiencia",
     experience_text:
@@ -47,6 +53,12 @@ const translations = {
       "Development of a scalable solution using distributed databases, oriented toward Big Data environments.",
 
     skills_title: "Skills",
+    skills_languages: "Programming Languages",
+    skills_frontend: "Frontend",
+    skills_backend: "Backend",
+    skills_database: "Databases",
+    skills_tools: "DevOps & Tools",
+
 
     experience_title: "Experience",
     experience_text:

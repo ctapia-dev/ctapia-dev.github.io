@@ -119,17 +119,51 @@ h3 {
 }
 
 /* ================= SKILLS ================= */
-.skills-list {
-  list-style: none;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
-.skills-list li {
+.skill-card {
   background: #fff;
-  margin-bottom: 10px;
-  padding: 12px 16px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
 }
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h4 {
+  margin-bottom: 10px;
+}
+
+.skill-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.skill-icons div {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.skill-icons i {
+  font-size: 2.2rem;
+  color: #0ea5e9;
+  margin-bottom: 5px;
+  transition: transform 0.2s ease;
+}
+
+.skill-icons div:hover i {
+  transform: scale(1.15);
+}
+
 
 /* ================= EXPERIENCE ================= */
 #experience p {
@@ -168,4 +202,40 @@ footer p {
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
+}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-content {
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.btn:active {
+  transform: scale(0.97);
 }
