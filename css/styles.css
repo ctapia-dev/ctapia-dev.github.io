@@ -483,10 +483,46 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 0.4rem;
 }
-.cert-name {
-  font-size: 0.87rem;
-  color: var(--text-dim);
-  line-height: 1.5;
+.cert-actions {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border);
+}
+.cert-btn {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0.3rem;
+}
+.cert-btn-pdf {
+  background: rgba(0,229,255,0.07);
+  border: 1px solid rgba(0,229,255,0.25);
+  color: var(--accent);
+}
+.cert-btn-pdf:hover {
+  background: rgba(0,229,255,0.15);
+  border-color: var(--accent);
+}
+.cert-btn-verify {
+  background: rgba(16,185,129,0.07);
+  border: 1px solid rgba(16,185,129,0.25);
+  color: var(--accent3);
+}
+.cert-btn-verify:hover {
+  background: rgba(16,185,129,0.15);
+  border-color: var(--accent3);
+}
+.cert-btn-pending {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 /* ── FOOTER / CONTACT ── */
