@@ -64,7 +64,7 @@
       <div class="about-card"><div class="about-card-title" data-i18n="about_card1_title">🎓 Formación</div><div class="about-card-body" data-i18n="about_card1_body">Ing. en Computación e Informática — UNAB, 2020–2025</div></div>
       <div class="about-card"><div class="about-card-title" data-i18n="about_card2_title">📍 Ubicación</div><div class="about-card-body" data-i18n="about_card2_body">Viña del Mar, Chile — abierta a trabajo remoto</div></div>
       <div class="about-card"><div class="about-card-title" data-i18n="about_card3_title">🌐 Idiomas</div><div class="about-card-body" data-i18n="about_card3_body">Español (nativo) · Inglés (intermedio)</div></div>
-      <div class="about-card"><div class="about-card-title"> Metodologías</div><div class="about-card-body">Scrum · GitHub flow · OWASP · WCAG</div></div>
+      <div class="about-card"><div class="about-card-title"> Metodologías</div><div class="about-card-body">Scrum · POO · Kanban · Lean Development · Desarrollo de Software Orientado a Objetos</div></div>
     </div>
   </div>
 </section>
@@ -138,8 +138,6 @@
         <span class="stag">Grafana</span>
         <span class="stag">Power BI</span>
         <span class="stag">Big Data</span>
-        <span class="stag">OWASP</span>
-        <span class="stag">WCAG</span>
       </div>
     </div>
   </div>
@@ -152,31 +150,121 @@
     <h3 data-i18n="projects_title">Proyectos</h3>
     <div class="section-line"></div>
   </div>
+
   <div class="projects-grid">
-    <div class="project-card">
+
+    <!-- PROYECTO 01 -->
+    <div class="project-card project-card-wide">
       <div class="project-num">01</div>
       <h4>SelfTEAch</h4>
-      <p data-i18n="project_selfteach">Aplicación móvil para Android orientada a la inclusión para personas con Autismo y Cuidadores. Ofrece estrategias de gestión emocional, recursos educativos y una comunidad para compartir experiencias y acceder a recursos que mejoran su calidad de vida. Proyecto de Título desarrollado con metodología Scrum.</p>
-      <div class="project-tech"><span>Android Studio</span><span>Scrum</span><span>Dockerfile</span><span>Jira</span><span>MySQL</span><span>Figma</span><span>Ionic</span><span>Node.js</span></div>
+      <p data-i18n="project_selfteach">
+        Aplicación móvil para Android orientada a la inclusión para personas con Autismo y Cuidadores.
+        Ofrece estrategias de gestión emocional, recursos educativos y una comunidad para compartir experiencias.
+      </p>
+
+      <div class="project-tech">
+        <span>Android Studio</span><span>Angular</span><span>Scrum</span><span>SQLite</span><span>Jira</span>
+      </div>
+
+      <div class="figma-toggle-wrap">
+        <button class="figma-toggle-btn" onclick="toggleFigma(this)">
+          Ver prototipo en Figma
+        </button>
+
+        <div class="figma-embed-container" style="display:none;">
+          <div class="figma-embed-header">
+            <span class="figma-label">Prototipo interactivo — SelfTEAch</span>
+            <button class="figma-close"
+              onclick="toggleFigma(this.closest('.figma-toggle-wrap').querySelector('.figma-toggle-btn'))">✕</button>
+          </div>
+
+          <iframe
+            src="https://embed.figma.com/proto/4t8Jwa0WtsCnVswHVXevVb/SelfTEAch?node-id=14-15&starting-point-node-id=14%3A15&embed-host=share"
+            allowfullscreen
+            loading="lazy"
+            class="figma-iframe">
+          </iframe>
+        </div>
+      </div>
     </div>
-    <div class="project-card">
+    <!-- PROYECTO 02  -->
+ <div class="project-card project-card-wide">
       <div class="project-num">02</div>
       <h4>VConnect</h4>
       <p data-i18n="project_vconnect">App Android de reporte de incidentes en tiempo real. Rol: Project Coordinator & Documentation Lead — gestioné epics, historias de usuario y seguimiento en Jira, documentación técnica en Confluence y generación de burndown charts del sprint.</p>
-      <div class="project-tech"><span>GitHub</span><span>Firebase</span><span>Angular</span><span>Jira</span><span>Confluence</span><span>Android Studio</span></div>
+      <div class="project-tech"><span>Android Studio</span><span>Firebase</span><span>Jira</span><span>Confluence</span><span>Scrum</span><span>Ionic</span></div>
+      <div class="project-links">
+        <a href="https://github.com/dev-sfuentes/ionic-unab-ing-II" target="_blank" class="project-link-btn">
+          <i class="devicon-github-plain"></i> Ver código en GitHub
+        </a>
+      </div>
+      <div class="carousel-wrap">
+        <button class="carousel-toggle-btn" onclick="toggleCarousel(this)">
+          Ver presentación Sprint 
+        </button>
+        <div class="carousel-container" style="display:none;">
+          <div class="carousel-header">
+            <span class="carousel-label">Presentación Sprint — VConnect Módulo Incendios</span>
+            <button class="carousel-close" onclick="toggleCarousel(this.closest('.carousel-wrap').querySelector('.carousel-toggle-btn'))">✕</button>
+          </div>
+          <div class="carousel-body">
+            <button class="carousel-arrow carousel-prev" onclick="moveCarousel(this, -1)">&#8249;</button>
+            <div class="carousel-track-wrap">
+              <div class="carousel-track" id="vconnect-track">
+                <img src="assets/img/slide-01.jpg" alt="Slide 1" loading="lazy"/>
+                <img src="assets/img/slide-02.jpg" alt="Slide 2" loading="lazy"/>
+                <img src="assets/img/slide-03.jpg" alt="Slide 3" loading="lazy"/>
+                <img src="assets/img/slide-04.jpg" alt="Slide 4" loading="lazy"/>
+                <img src="assets/img/slide-05.jpg" alt="Slide 5" loading="lazy"/>
+                <img src="assets/img/slide-06.jpg" alt="Slide 6" loading="lazy"/>
+                <img src="assets/img/slide-07.jpg" alt="Slide 7" loading="lazy"/>
+                <img src="assets/img/slide-08.jpg" alt="Slide 8" loading="lazy"/>
+                <img src="assets/img/slide-09.jpg" alt="Slide 9" loading="lazy"/>
+                <img src="assets/img/slide-10.jpg" alt="Slide 10" loading="lazy"/>
+                <img src="assets/img/slide-11.jpg" alt="Slide 11" loading="lazy"/>
+                <img src="assets/img/slide-12.jpg" alt="Slide 12" loading="lazy"/>
+                <img src="assets/img/slide-13.jpg" alt="Slide 13" loading="lazy"/>
+                <img src="assets/img/slide-14.jpg" alt="Slide 14" loading="lazy"/>
+                <img src="assets/img/slide-15.jpg" alt="Slide 15" loading="lazy"/>
+                <img src="assets/img/slide-16.jpg" alt="Slide 16" loading="lazy"/>
+                <img src="assets/img/slide-17.jpg" alt="Slide 17" loading="lazy"/>
+              </div>
+            </div>
+            <button class="carousel-arrow carousel-next" onclick="moveCarousel(this, 1)">&#8250;</button>
+          </div>
+          <div class="carousel-counter">
+            <span class="carousel-current">1</span> / <span class="carousel-total">17</span>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- PROYECTO 03 -->
     <div class="project-card">
       <div class="project-num">03</div>
       <h4>Cluster NoSQL</h4>
-      <p data-i18n="project_cluster">Solución escalable con MongoDB distribuido, evaluando sharding y replicación para Big Data.</p>
-      <div class="project-tech"><span>MongoDB</span><span>NoSQL</span><span>Big Data</span><span>Sharding</span></div>
+      <p data-i18n="project_cluster">
+        Solución escalable con MongoDB distribuido, evaluando sharding y replicación para Big Data.
+      </p>
+
+      <div class="project-tech">
+        <span>MongoDB</span><span>NoSQL</span><span>Big Data</span><span>Sharding</span>
+      </div>
     </div>
+
+    <!-- PROYECTO 04 -->
     <div class="project-card">
       <div class="project-num">04</div>
       <h4 data-i18n="project_blog_title">Blog Tecnologías Disruptivas</h4>
-      <p data-i18n="project_blog">Divulgación técnica sobre Blockchain, NFT, VR e Impresión 3D. Gestión de CMS y comunicación técnica.</p>
-      <div class="project-tech"><span>WordPress</span><span>Blockchain</span><span>NFT</span><span>VR</span></div>
+      <p data-i18n="project_blog">
+        Divulgación técnica sobre Blockchain, NFT, VR e Impresión 3D.
+      </p>
+
+      <div class="project-tech">
+        <span>WordPress</span><span>Blockchain</span><span>NFT</span><span>VR</span>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -290,7 +378,7 @@
     <div class="contact-links">
       <a href="mailto:cony.tapia.orellana@gmail.com" class="contact-link">
         <span class="contact-icon">✉</span>
-        <div><div class="contact-label">Email</div><div class="contact-val">cony.tapia.orellana@gmail.com</div></div>
+        <div><div class="contact-label">Email</div><div class="contact-val"><span class="__cf_email__" data-cfemail="8cefe3e2f5a2f8edfce5eda2e3fee9e0e0ede2edccebe1ede5e0a2efe3e1"><div class="contact-val">cony.tapia.orellana@gmail.com</div></span></div></div>
       </a>
       <a href="https://www.linkedin.com/in/constanza-tapia-orellana" target="_blank" class="contact-link">
         <span class="contact-icon">in</span>
@@ -306,7 +394,7 @@
       </a>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 Constanza Tapia — ctapiam-dev.github.io</span>
+      <span>© 2025 Constanza Tapia — ctapia.dev</span>
     </div>
   </div>
 </footer>

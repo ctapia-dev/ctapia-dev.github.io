@@ -590,11 +590,15 @@ footer {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(28px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.reveal.active {
+.reveal.animate {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.reveal.animate.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -610,4 +614,299 @@ footer {
   .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
   .hero-stats { gap: 1.8rem; }
   .footer-bottom { flex-direction: column; gap: 0.4rem; }
+}
+
+/* FIGMA */
+.project-card-wide {
+  grid-column: 1 / -1;
+}
+
+.figma-toggle-wrap {
+  margin-top: 1.2rem;
+}
+
+.figma-toggle-btn {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 0.7rem 1.4rem;
+  background: rgba(124,58,237,0.08);
+  border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 2px;
+  color: #a78bfa;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.figma-toggle-btn:hover,
+.figma-toggle-btn.active {
+  background: rgba(124,58,237,0.18);
+  border-color: #7c3aed;
+  color: #c4b5fd;
+}
+
+.figma-embed-container {
+  margin-top: 1rem;
+  border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  animation: fadeUp 0.35s ease both;
+}
+
+.figma-embed-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.6rem 1rem;
+  background: rgba(124,58,237,0.1);
+  border-bottom: 1px solid rgba(124,58,237,0.2);
+}
+.figma-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: #a78bfa;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.figma-close {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2px;
+  transition: color 0.2s;
+}
+.figma-close:hover { color: var(--text); }
+
+.figma-iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  display: block;
+  background: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .figma-iframe { height: 380px; }
+  .project-card-wide { grid-column: auto; }
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* ── PROJECT LINKS ── */
+.project-links {
+  display: flex; gap: 0.6rem; flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.project-link-btn {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0,229,255,0.06);
+  border: 1px solid rgba(0,229,255,0.2);
+  border-radius: 2px;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  transition: all 0.2s;
+  letter-spacing: 0.06em;
+}
+.project-link-btn:hover {
+  background: rgba(0,229,255,0.14);
+  border-color: var(--accent);
+}
+.project-link-btn i { font-size: 1rem; }
+
+/* ── CAROUSEL ── */
+.carousel-wrap { margin-top: 1.2rem; }
+
+.carousel-toggle-btn {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 0.7rem 1.4rem;
+  background: rgba(16,185,129,0.07);
+  border: 1px solid rgba(16,185,129,0.25);
+  border-radius: 2px;
+  color: var(--accent3);
+  cursor: pointer;
+  transition: all 0.25s;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.carousel-toggle-btn:hover,
+.carousel-toggle-btn.active {
+  background: rgba(16,185,129,0.15);
+  border-color: var(--accent3);
+}
+
+.carousel-container {
+
+  margin-top: 1rem;
+  border: 1px solid rgba(16,185,129,0.25);
+  border-radius: 4px;
+  overflow: hidden;
+  
+
+  display: none;
+}
+
+.carousel-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.6rem 1rem;
+  background: rgba(16,185,129,0.08);
+  border-bottom: 1px solid rgba(16,185,129,0.2);
+}
+.carousel-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--accent3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.carousel-close {
+  background: transparent; border: none;
+  color: var(--text-muted); cursor: pointer;
+  font-size: 0.85rem; padding: 0.2rem 0.4rem;
+  border-radius: 2px; transition: color 0.2s;
+}
+.carousel-close:hover { color: var(--text); }
+
+.carousel-body {
+  display: flex; align-items: center;
+  background: #000;
+  position: relative;
+}
+.carousel-track-wrap {
+  flex: 1; overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.carousel-track img {
+  width: 100%;
+  flex: 0 0 100%; 
+  height: 420px;
+  object-fit: contain;
+}
+
+.carousel-arrow {
+  background: rgba(255,255,255,0.08);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+  flex-shrink: 0;
+}
+.carousel-arrow:hover { background: rgba(255,255,255,0.18); }
+
+.carousel-counter {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  padding: 0.5rem;
+  background: var(--bg3);
+  border-top: 1px solid var(--border);
+}
+
+
+
+/* ── CAROUSEL FIXES ─────────────────────────────────────── */
+
+
+/* Flechas elegantes */
+.carousel-arrow {
+  background: rgba(0,0,0,0.6) !important;
+  border-right: 1px solid rgba(255,255,255,0.06) !important;
+  border-left: 1px solid rgba(255,255,255,0.06) !important;
+  border-top: none !important; border-bottom: none !important;
+  transition: all 0.2s !important;
+}
+.carousel-arrow:hover {
+  background: rgba(0,229,255,0.12) !important;
+  color: var(--accent) !important;
+}
+
+/* Imagen sin recorte */
+.carousel-track img {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  height: 460px !important;
+  object-fit: contain !important;
+  background: #080808 !important;
+}
+
+/* Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1rem;
+  background: var(--bg3);
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.carousel-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--border2);
+  border: none; cursor: pointer; padding: 0;
+  transition: background 0.2s, transform 0.2s;
+  flex-shrink: 0;
+}
+.carousel-dot.active { background: var(--accent); transform: scale(1.5); }
+.carousel-dot:hover { background: var(--text-muted); }
+
+/* Counter */
+.carousel-counter {
+  font-size: 0.63rem !important;
+  letter-spacing: 0.12em !important;
+  padding: 0.3rem !important;
+}
+
+@media (max-width: 768px) {
+  .carousel-track img { height: 220px !important; }
+}
+
+/* ── CAROUSEL SHOW/HIDE ─────────────────────────────────── */
+
+.carousel-container.open { display: block; animation: fadeUp 0.35s ease both; }
+/* ── CAROUSEL TRACK FIX (definitivo) ───────────────────── */
+.carousel-body {
+  display: flex !important;
+  align-items: stretch !important;
+  background: #080808 !important;
+  overflow: hidden !important;
+}
+.carousel-track-wrap {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+.carousel-track {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  will-change: transform;
+}
+.carousel-track img {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  height: 460px !important;
+  object-fit: contain !important;
+  background: #080808 !important;
+  display: block !important;
+}
+@media (max-width: 768px) {
+  .carousel-track img { height: 220px !important; }
 }
