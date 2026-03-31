@@ -814,11 +814,6 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-
-
-/* ── CAROUSEL FIXES ─────────────────────────────────────── */
-
-
 /* Flechas elegantes */
 .carousel-arrow {
   background: rgba(0,0,0,0.6) !important;
@@ -873,8 +868,6 @@ footer {
 @media (max-width: 768px) {
   .carousel-track img { height: 220px !important; }
 }
-
-/* ── CAROUSEL SHOW/HIDE ─────────────────────────────────── */
 
 .carousel-container.open { display: block; animation: fadeUp 0.35s ease both; }
 /* ── CAROUSEL TRACK FIX (definitivo) ───────────────────── */

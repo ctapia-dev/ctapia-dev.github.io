@@ -10,7 +10,7 @@ const translations = {
 
     // hero
     hero_tag: "Disponible para nuevas oportunidades",
-    hero_subtitle: "Ingeniera Full Stack — Desarrollo web & móvil, monitoreo de infraestructura y bases de datos. Viña del Mar, Chile.",
+    hero_subtitle: "Ingeniera en Computación e Informática. Viña del Mar, Chile.",
     btn_cv: "Descargar CV",
     stat_tech: "Tecnologías",
     stat_projects: "Proyectos",
@@ -70,7 +70,7 @@ const translations = {
 
     // hero
     hero_tag: "Open to new opportunities",
-    hero_subtitle: "Full Stack Engineer — Web & mobile development, infrastructure monitoring and databases. Viña del Mar, Chile.",
+    hero_subtitle: "Computer and Informatics Engineer. Viña del Mar, Chile.",
     btn_cv: "Download CV",
     stat_tech: "Technologies",
     stat_projects: "Projects",
