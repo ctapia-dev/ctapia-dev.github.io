@@ -10,6 +10,7 @@ const translations = {
 
     // hero
     hero_tag: "Disponible para nuevas oportunidades",
+    hero_role: "Full Stack · Backend · DevOps",
     hero_subtitle: "Ingeniera en Computación e Informática. Viña del Mar, Chile.",
     btn_cv: "Descargar CV",
     stat_tech: "Tecnologías",
@@ -19,11 +20,11 @@ const translations = {
     // about
     about_title: "Sobre mí",
     about_text: "Ingeniera en Computación e Informática con experiencia en desarrollo de software, monitoreo de infraestructura y administración de bases de datos. Me especializo en construir soluciones eficientes integrando buenas prácticas de ciberseguridad, accesibilidad y trabajo colaborativo. He trabajado con entornos Linux, herramientas de observabilidad y metodologías ágiles, aportando valor tanto en desarrollo como en operaciones.",
-    about_card1_title: "🎓 Formación",
+    about_card1_title: "Formación",
     about_card1_body: "Ing. en Computación e Informática — UNAB, 2020–2025",
-    about_card2_title: "📍 Ubicación",
+    about_card2_title: "Ubicación",
     about_card2_body: "Viña del Mar, Chile — abierta a trabajo remoto",
-    about_card3_title: "🌐 Idiomas",
+    about_card3_title: "Idiomas",
     about_card3_body: "Español (nativo) · Inglés (intermedio)",
 
     // skills
@@ -70,6 +71,7 @@ const translations = {
 
     // hero
     hero_tag: "Open to new opportunities",
+    hero_role: "Full Stack · Backend · DevOps",
     hero_subtitle: "Computer and Informatics Engineer. Viña del Mar, Chile.",
     btn_cv: "Download CV",
     stat_tech: "Technologies",
@@ -79,11 +81,11 @@ const translations = {
     // about
     about_title: "About Me",
     about_text: "Computer and Informatics Engineer with experience in software development, infrastructure monitoring, and database administration. I specialize in building efficient solutions integrating cybersecurity best practices, accessibility, and collaborative workflows. Experienced in Linux environments, observability tools, and agile methodologies.",
-    about_card1_title: "🎓 Education",
+    about_card1_title: "Education",
     about_card1_body: "Computer & Informatics Engineering — UNAB, 2020–2025",
-    about_card2_title: "📍 Location",
+    about_card2_title: "Location",
     about_card2_body: "Viña del Mar, Chile — open to remote work",
-    about_card3_title: "🌐 Languages",
+    about_card3_title: "Languages",
     about_card3_body: "Spanish (native) · English (intermediate)",
 
     // skills
@@ -98,7 +100,7 @@ const translations = {
     // projects
     projects_title: "Projects",
     project_selfteach: "Android mobile app focused on inclusion for people with Autism and Caregivers. Offers emotional management strategies, educational resources, and a community to share experiences and access resources that improve quality of life. Thesis project developed with Scrum methodology.",
-    project_vconnect: "Android real-time incident reporting app. Role: Project Coordinator & Documentation Lead — managed epics, user stories and task tracking in Jira, technical documentation in Confluence, and sprint burndown chart reporting.",
+    project_vconnect: "Android real-time incident reporting app. Role: Project Manager & Scrum Master — managed epics, user stories and task tracking in Jira, technical documentation in Confluence, and sprint burndown chart reporting.",
     project_cluster: "Scalable solution with distributed MongoDB, evaluating sharding and replication strategies for Big Data.",
     project_blog_title: "Disruptive Technologies Blog",
     project_blog: "Technical content about Blockchain, NFT, VR and 3D Printing. CMS management and technical communication.",

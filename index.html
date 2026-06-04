@@ -35,6 +35,7 @@
   <div class="hero-content">
     <div class="hero-tag"><span class="hero-tag-dot"></span><span data-i18n="hero_tag">Disponible para nuevas oportunidades</span></div>
     <h1>Constanza<br><span class="name-gradient">Tapia Orellana.</span></h1>
+    <p class="hero-role">Full Stack · Backend · DevOps</p>
     <p class="hero-subtitle" data-i18n="hero_subtitle">Ingeniera en Computación e Informática. Viña del Mar, Chile.</p>
     <div class="hero-buttons">
       <a href="assets/cv/CV.ConstanzaTapia.pdf" class="btn btn-primary" download data-i18n="btn_cv">Descargar CV</a>
@@ -86,7 +87,7 @@
         <div><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
         <div><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
         <div><i class="devicon-r-plain colored"></i><span>R</span></div>
-        <div><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        <div class="skill-primary"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
       </div>
     </div>
     <div class="skill-card">
@@ -95,39 +96,42 @@
         <div><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
         <div><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
         <div><i class="devicon-angularjs-plain"></i><span>Angular</span></div>
-        <div><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+        <div class="skill-primary"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
         <div><i class="devicon-npm-original-wordmark"></i><span>NPM</span></div>
-        <div><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+        <div class="skill-primary"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
         <div><i class="devicon-react-plain colored"></i><span>React.js</span></div>
       </div>
     </div>
     <div class="skill-card">
       <h4 data-i18n="skills_backend">Backend</h4>
       <div class="skill-icons">
-        <div><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
-        <div><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+        <div class="skill-primary"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div class="skill-primary"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
         <div><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
         <div><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
         <div><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
-        <div><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-        <div><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+        <div class="skill-primary"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div class="skill-primary"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
       </div>
     </div>
     <div class="skill-card">
       <h4 data-i18n="skills_database">Bases de Datos</h4>
       <div class="skill-icons">
-        <div><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div class="skill-primary"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
         <div><i class="devicon-oracle-plain colored"></i><span>Oracle</span></div>
         <div><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+        <div><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div><i class="devicon-mariadb-plain colored"></i><span>MariaDB</span></div>
       </div>
     </div>
     <div class="skill-card">
       <h4 data-i18n="skills_tools">DevOps &amp; Tools</h4>
       <div class="skill-icons">
-        <div><i class="devicon-git-plain colored"></i><span>Git</span></div>
-        <div><i class="devicon-github-plain"></i><span>GitHub</span></div>
-        <div><i class="devicon-grafana-plain colored"></i><span>Grafana</span></div>
-        <div><i class="devicon-linux-plain"></i><span>Linux</span></div>
+        <div class="skill-primary"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+        <div class="skill-primary"><i class="devicon-github-plain"></i><span>GitHub</span></div>
+        <div class="skill-primary"><i class="devicon-grafana-plain colored"></i><span>Grafana</span></div>
+        <div class="skill-primary"><i class="devicon-linux-plain"></i><span>Linux</span></div>
         <div><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
         <div><i class="devicon-putty-plain colored"></i><span>PuTTY</span></div>  
         <div><i class="devicon-xampp-plain colored"></i><span>XAMPP</span></div>
@@ -157,7 +161,7 @@
 
     <!-- PROYECTO 01 -->
     <div class="project-card project-card-wide">
-      <div class="project-num">01</div>
+      <div class="project-num">01 <span class="project-badge">Proyecto de Título</span></div>
       <h4>SelfTEAch</h4>
       <p data-i18n="project_selfteach">
         Aplicación móvil para Android orientada a la inclusión para personas con Autismo y Cuidadores.
@@ -204,7 +208,7 @@
         <button class="carousel-toggle-btn" onclick="toggleCarousel(this)">
           Ver presentación Sprint 
         </button>
-        <div class="carousel-container" style="display:none;">
+        <div class="carousel-container">
           <div class="carousel-header">
             <span class="carousel-label">Presentación Sprint — VConnect Módulo Incendios</span>
             <button class="carousel-close" onclick="toggleCarousel(this.closest('.carousel-wrap').querySelector('.carousel-toggle-btn'))">✕</button>
@@ -305,70 +309,70 @@
       <div class="cert-issuer">IBM</div>
       <div class="cert-name">Data Science Practitioner Certificate</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/certificado_pdf.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
+        <a href="assets/certificacion/certificado_pdf.pdf" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">MongoDB</div>
       <div class="cert-name">MongoDB Data Modeling Path</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/constanza-tapia-certificate.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
+        <a href="assets/certificacion/constanza-tapia-certificate.pdf" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Microsoft</div>
       <div class="cert-name">Preparación y desarrollo de informes con Power BI</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/power_bi.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://learn.microsoft.com/api/achievements/share/es-es/TAPIAORELLANACONSTANZAA-1232/HAMUYRT8?sharingId=C4C79CC015FA29E5" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets/certificacion/power_bi.pdf" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
+        <a href="https://learn.microsoft.com/api/achievements/share/es-es/TAPIAORELLANACONSTANZAA-1232/HAMUYRT8?sharingId=C4C79CC015FA29E5" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Microsoft</div>
       <div class="cert-name">Introducción al análisis de datos y Transact-SQL</div>
       <div class="cert-actions">
-        <a href="assets\certificacion\transact_sql.png" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://learn.microsoft.com/api/achievements/share/es-es/TAPIAORELLANACONSTANZAA-1232/NR9N5U2F?sharingId=C4C79CC015FA29E5" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets\certificacion\transact_sql.png" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
+        <a href="https://learn.microsoft.com/api/achievements/share/es-es/TAPIAORELLANACONSTANZAA-1232/NR9N5U2F?sharingId=C4C79CC015FA29E5" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Microsoft</div>
       <div class="cert-name">Desarrollo web para principiantes</div>
       <div class="cert-actions">
-        <a href="assets\certificacion\desarrollo_web.png" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://learn.microsoft.com/api/achievements/share/es-es/TAPIAORELLANACONSTANZAA-1232/D64HFS8J?sharingId=C4C79CC015FA29E5" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets\certificacion\desarrollo_web.png" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
+        <a href="https://learn.microsoft.com/api/achievements/share/es-es/TAPIAORELLANACONSTANZAA-1232/D64HFS8J?sharingId=C4C79CC015FA29E5" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Meta — Coursera</div>
       <div class="cert-name">Introducción al desarrollo de apps móviles para Android</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/Coursera_ZWVIT36BU2F9_pdf.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://coursera.org/verify/ZWVIT36BU2F9" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets/certificacion/Coursera_ZWVIT36BU2F9_pdf.pdf" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
+        <a href="https://coursera.org/verify/ZWVIT36BU2F9" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Univ. de los Andes</div>
       <div class="cert-name">Control de versiones con Git y GitHub</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/git-github.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://coursera.org/share/2bfd95a9134aa84a407587befd2bb053" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets/certificacion/git-github.pdf" target="_blank" class="cert-btn cert-btn-pdf"> Ver certificado</a>
+        <a href="https://coursera.org/share/2bfd95a9134aa84a407587befd2bb053" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Univ. de los Andes</div>
       <div class="cert-name">Big Data: impacto de los datos masivos</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/big-data.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://coursera.org/share/281845f1f32e7ef23fb8ffee3313f8a0" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets/certificacion/big-data.pdf" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
+        <a href="https://coursera.org/share/281845f1f32e7ef23fb8ffee3313f8a0" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
     <div class="cert-card">
       <div class="cert-issuer">Univ. Austral — Coursera</div>
       <div class="cert-name">Diseñando páginas web con Bootstrap 4</div>
       <div class="cert-actions">
-        <a href="assets/certificacion/Coursera_ENTR3RGOIS29_pdf.pdf" target="_blank" class="cert-btn cert-btn-pdf">📄 Ver certificado</a>
-        <a href="https://coursera.org/verify/ENTR3RGOIS29" target="_blank" class="cert-btn cert-btn-verify">✓ Verificar</a>
+        <a href="assets/certificacion/Coursera_ENTR3RGOIS29_pdf.pdf" target="_blank" class="cert-btn cert-btn-pdf">Ver certificado</a>
+        <a href="https://coursera.org/verify/ENTR3RGOIS29" target="_blank" class="cert-btn cert-btn-verify">Verificar</a>
       </div>
     </div>
   </div>
