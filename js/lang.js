@@ -10,7 +10,7 @@ const translations = {
 
     // hero
     hero_tag: "Disponible para nuevas oportunidades",
-    hero_role: "Full Stack · Backend · DevOps",
+    hero_role: "Full Stack · Backend ·  SOC / DevSecOps",
     hero_subtitle: "Ingeniera en Computación e Informática. Viña del Mar, Chile.",
     btn_cv: "Descargar CV",
     stat_tech: "Tecnologías",
@@ -47,10 +47,10 @@ const translations = {
     // experience
     experience_title: "Experiencia",
     exp_role: "Practicante — Desarrollo y Monitoreo",
-    exp_bullet1: "Implementé dashboards con Grafana y Prometheus, mejorando visibilidad del sistema y reduciendo tiempo de detección de incidentes.",
-    exp_bullet2: "Automaticé la generación de reportes de métricas semanales, eliminando un proceso manual.",
-    exp_bullet3: "Soporte en entornos Linux con buenas prácticas de seguridad y disponibilidad.",
-    exp_bullet4: "Metodología Scrum con Jira y Confluence, participando en planificación de sprints y revisiones de equipo.",
+    exp_bullet1: "Implementé y configuré herramientas de monitoreo con Prometheus y Grafana, desarrollando dashboards para visualizar métricas de infraestructura y bases de datos.",
+    exp_bullet2: "Configuré alertas para detectar anomalías y problemas de rendimiento, incluyendo el monitoreo del uso de disco y servicios, facilitando la detección temprana de incidentes.",
+    exp_bullet3: "Trabajé con entornos Linux, realizando configuraciones, gestión de servicios y tareas de monitoreo orientadas a la disponibilidad y estabilidad de los sistemas.",
+    exp_bullet4: "Apoyé en tareas relacionadas con bases de datos y monitoreo de infraestructura, contribuyendo a mejorar la visibilidad operacional y la gestión de incidentes.",
 
     // certifications
     certifications_title: "Certificaciones",
@@ -80,7 +80,7 @@ const translations = {
 
     // about
     about_title: "About Me",
-    about_text: "Computer and Informatics Engineer with experience in software development, infrastructure monitoring, and database administration. I specialize in building efficient solutions integrating cybersecurity best practices, accessibility, and collaborative workflows. Experienced in Linux environments, observability tools, and agile methodologies.",
+    about_text: "Computer Science and Informatics Engineer with experience in software development, infrastructure monitoring, and database administration. I focus on building efficient solutions that incorporate good practices in cybersecurity, accessibility, and teamwork. I have worked in Linux environments, with observability tools and agile methodologies, contributing to both development and operations.",
     about_card1_title: "Education",
     about_card1_body: "Computer & Informatics Engineering — UNAB, 2020–2025",
     about_card2_title: "Location",
@@ -108,10 +108,10 @@ const translations = {
     // experience
     experience_title: "Experience",
     exp_role: "Professional Intern — Development & Monitoring",
-    exp_bullet1: "Built infrastructure dashboards with Grafana and Prometheus, improving system visibility and reducing incident detection time.",
-    exp_bullet2: "Automated weekly metrics report generation, replacing a manual process.",
-    exp_bullet3: "System support in Linux environments applying security and availability best practices.",
-    exp_bullet4: "Scrum methodology with Jira and Confluence, participating in sprint planning and team reviews.",
+    exp_bullet1: "Implemented monitoring solutions using Prometheus and Grafana, creating dashboards to visualize infrastructure and database metrics.",
+    exp_bullet2: "Configured alerts to detect anomalies and performance issues, including disk usage and service monitoring, enabling early incident detection.",
+    exp_bullet3: "Worked with Linux environments, performing configurations, service management, and monitoring tasks focused on system availability and stability.",
+    exp_bullet4: "Supported database and infrastructure monitoring tasks, improving operational visibility and incident management.",
 
     // certifications
     certifications_title: "Certifications",
